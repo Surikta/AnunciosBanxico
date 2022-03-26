@@ -62,3 +62,9 @@ def word_cloud(string, image_name):
     plt.savefig("WordCloud\\" + image_name + ".png")
 
     return None
+
+
+if __name__ == "__main__":
+    anuncio = text_extract('Anuncios_Banxico\\' + input('Nombre del PDF (PATH):') + '.pdf')
+    word_cloud(anuncio, input('Nombre de la imágen:'))
+    
